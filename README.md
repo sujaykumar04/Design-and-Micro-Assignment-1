@@ -1,3 +1,6 @@
+
+Here is the live link for the application on NETLIFY - https://skypia.netlify.app/
+
 #  WeatherSphere – Smart Weather Search Application
 
 WeatherSphere is a single-page weather application that allows users to search Indian cities using autocomplete and instantly view real-time weather data along with upcoming hourly forecasts.
