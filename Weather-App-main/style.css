@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.weather-container {
+    width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    max-height: 200px; /* Shows around 4 items */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff66 transparent;
+}
+
+#suggestions li {
+    padding: 8px;
+    cursor: pointer;
+}
+#suggestions::-webkit-scrollbar {
+    width: 6px;
+}
+#suggestions::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+#suggestions::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#suggestions li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.weather-icon {
+    height: 100px;
+    margin: 10px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.weather-info h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+}
+
+.history li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}
+.hourly-forecast {
+    margin-top: 15px;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    font-size: 12px;
+}
+
+.hourly-forecast h4 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+.hour-block {
+    min-width: 60px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    text-align: center;
+}

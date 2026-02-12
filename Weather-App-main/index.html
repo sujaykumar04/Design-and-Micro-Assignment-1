@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Skypia</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="weather-container">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for city..." autocomplete="off" />
+        <ul id="suggestions"></ul>
+    </div>
+    <div class="weather-card">
+        <div class="weather-icon" id="weatherIcon"></div>
+        <div class="weather-info">
+            <h2 id="cityName">City Name</h2>
+            <p id="locationDetails">State, Country</p>
+            <h1 id="temperature">--°C</h1>
+        </div>
+    </div>
+    <div id="hourlyForecast" class="hourly-forecast"></div>
+    <div class="history">
+        <h3>Search History</h3>
+        <ul id="historyList"></ul>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
